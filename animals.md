@@ -1,1 +1,5 @@
-animals.md
+👹 Conejo
+🙉 Perro
+🤖 Vaca
+🧞‍♀️ Sapo
+🧟 Zorro
