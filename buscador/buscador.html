@@ -8,20 +8,20 @@
 </head>
 <style>
     body{
-        margin: 0px;
+        background-color:#8F57FD;
         font-family: 'Mulish', sans-serif;
-        background-color:#AB88FF
+        margin: 0px;
     }
     .header{
-        height: 80px;
-        background-color:#AB88FF;
-        display: flex;
-        justify-content: space-between;
         align-items:center;
+        background-color:#8F57FD;
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
     }
     .header__img{
-        width: 200px;
         margin: 10px 10px 10px 10px;
+        width: 200px;
     }
     .header__menu{
         margin-right: 30px;
@@ -29,11 +29,11 @@
     .header__menu ul{
         display: none;
         list-style: none;
+        margin: 0px 0px 0px -14px;
         padding: 0px;
         position: absolute;
-        width 100px;
         text-align: right;
-        margin: 0px 0px 0px -14px;
+        width 100px;
     }
     .header__menu:hover ul, ul:hover{
         display: block;
@@ -50,17 +50,40 @@
         text-decoration: underline;
     }
     .header__menu--profile{
-        margin-right: 8px;
         display: flex;
+        margin-right: 8px;
     }
     .header__menu--profile img {
         margin-right: 8px;
         width: 40px;
     }
     .header__menu--profile p {
+        color: white;
         margin: 0px;
+    }
+    .main {
+        height: 300px;
+    }
+    .main__title {
+        color: white;
+        font-size: 25px;
+    }
+    .input {
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 25px;
+        border: 2px solid white;
+        color: white;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        outline-style: none;
+        padding: 0px 20px;
+        width: 70%;
+    }
+    ::placeholder{
         color: white;
     }
+    
 </style>
 <body>
     <header class="header">
@@ -76,5 +99,9 @@
             </ul>    
         </div>
     </header>
+    <section class="main">
+        <h2 class="main__title">Que quieres ver hoy?</h2>
+        <input class="input" type="text" placeholder="buscar..">
+    </section>
 </body>
 </html>
